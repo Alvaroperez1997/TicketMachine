@@ -29,7 +29,7 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
-
+    
     /**
      * Return the price of a ticket.
      */
@@ -55,6 +55,14 @@ public class TicketMachine
         balance = balance + amount;
     }
 
+     /**
+     * Devuelve el total
+     */
+    public int getTotal()
+    {
+        return total;
+    }
+    
     /**
      * Print a ticket.
      * Update the total collected and
