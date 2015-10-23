@@ -31,6 +31,16 @@ public class TicketMachine
     }
     
     /**
+     * Fija el precio
+     */
+    public TicketMachine(int precioDelBillete)
+    {
+        price = precioDelBillete;
+        balance = 0;
+        total = 0;
+    }
+    
+    /**
      * Return the price of a ticket.
      */
     public int getPrice()
@@ -72,7 +82,7 @@ public class TicketMachine
     }
     
     /**
-     * 
+     * Imprime el mensaje dado
      */
     public void prompt()
     {
@@ -80,7 +90,7 @@ public class TicketMachine
     }
     
     /**
-     * 
+     * Muestra el precio imprimido
      */
     public void showPrice()
     {
